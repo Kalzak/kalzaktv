@@ -1,0 +1,37 @@
+[
+    {
+        "text": "Twitter",
+        "username": "@0xKalzak",
+        "link": "https://twitter.com/0xKalzak",
+        "color": "bg-tvlightblue-2",
+        "textcolor": "text-tvlightblueinverse"
+    },
+    {
+        "text": "Discord",
+        "username": "kalzak",
+        "link": "#",
+        "color": "bg-tvblue-3",
+        "textcolor": "text-tvyellowinverse"
+    },
+    {
+        "text": "Github",
+        "username": "Kalzak",
+        "link": "https://github.com/Kalzak",
+        "color": "bg-tvpink-2",
+        "textcolor": "text-tvpinkinverse"
+    },
+    {
+        "text": "Telegram",
+        "username": "Kalzak0x",
+        "link": "https://t.me/Kalzak0x",
+        "color": "bg-tvgreen-4",
+        "textcolor": "text-tvgreeninverse"
+    },
+    {
+        "text": "Email",
+        "username": "kalzak.dev@pm.me",
+        "link": "mailto:kalzak.dev@protonmail.com",
+        "color": "bg-tvred-3",
+        "textcolor": "text-tvredinverse"
+    }
+]
