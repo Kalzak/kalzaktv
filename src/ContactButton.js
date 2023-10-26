@@ -5,7 +5,7 @@ function ContactButton(props) {
     let link = props.link;
     if (props.link === "#") {
         target = "";
-        link = `javascript:alert("${props.text} doesn't support url invites, add me directly")`;
+        link = `javascript:alert("My username: ${props.username}")`;
     }
 
     return (

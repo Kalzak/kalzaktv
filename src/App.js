@@ -11,17 +11,9 @@ import staticVideo from "./assets/static.mp4";
 
 
 function ContactPage() {
-    /*
-    const [color, setColor] = useState("#2dba14");
 
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setColor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
-      }, 1000);
-  
-      return () => clearInterval(interval);
-    }, []);
-    */
+    // Logic for choosing nice colors for tab bar (supported on iOS and Chrome)
+    const [colorIndex, setColorIndex] = useState(0);
     const colors = [
         "#81EBEB",
         "#7A7AE5",
@@ -29,9 +21,6 @@ function ContactPage() {
         "#55F255",
         "#E25050",
     ]
-
-    const [colorIndex, setColorIndex] = useState(0);
-
     useEffect(() => {
       const interval = setInterval(() => {
         setColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
@@ -43,9 +32,11 @@ function ContactPage() {
     return (
 
         <div className="w-full h-[calc(100dvh)] bg-tvwhite-0 flex justify-center items-center transition-height duration-300 ease-in-out">
+
             <Helmet>
                 <meta name="theme-color" content={colors[colorIndex]} />
             </Helmet>
+            
             <video class="video-background" position="absolute" autoplay="autoplay" muted="muted" loop="loop" playsInline style={{ width: "100vw", height: "100vh", opacity: "30%", position: "absolute", zIndex: "-1", filter: "invert(1)", objectFit: "cover" }}>
 
                 <source src={staticVideo} type="video/mp4" />
