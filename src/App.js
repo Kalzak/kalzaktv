@@ -2,6 +2,7 @@ import './App.css';
 import ContactButton from './ContactButton';
 import { Helmet } from 'react-helmet';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import avatarGif from "./assets/avatar_static_loop.gif";
 import contacts from "./data/contacts.json";
@@ -58,6 +59,15 @@ function ContactPage() {
                 </div>
 
                 <div className="flex flex-col gap-5 sm:gap-10">
+                    <Link to="/">
+                        <div className={`w-80 sm:w-96 mx-auto bg-zinc-100
+                        text-center text-xl font-bold py-2.5 sm:py-3
+                        border-2 border-black
+                        shadow-custom hover:shadow-none transition-all
+                        hover:translate-x-1 hover:translate-y-1`}>
+                            <h1>More About Me</h1>
+                        </div>
+                    </Link>
                     {contacts.map(({ text, username, link, color}) => {
                         return (
                             <ContactButton text={text} username={username} link={link} color={color}/>
